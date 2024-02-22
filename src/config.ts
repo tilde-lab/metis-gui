@@ -8,14 +8,14 @@ export const IS_FILE = location.protocol === 'file:';
 export const GUI_HOST = RUNTIME_CONFIG.GUI_HOST ||
 	(IS_FILE
 		? IS_PROD
-			? 'https://metis.basf.net'
+			? 'https://app.basf.science'
 			: 'http://localhost:5000'
 		: location.origin);
 
 export const API_VERSION = 'v0';
 
 export const API_HOST = RUNTIME_CONFIG.API_HOST ||
-	(IS_PROD ? 'https://bff.metis.basf.net' : 'http://localhost:3000');
+	(IS_PROD ? 'https://bff.absolidix.com' : 'http://localhost:3000');
 
 export const API_BASEURL = `${API_HOST}/${API_VERSION}`;
 
